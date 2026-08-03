@@ -1,0 +1,182 @@
+/* Simple academic website inspired by the classic Jemdoc layout */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: white;
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 175px minmax(0, 800px);
+    max-width: 1050px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.sidebar {
+    align-self: start;
+    margin-top: 25px;
+    padding: 14px 12px;
+    background: #f6f6f6;
+    border: 1px solid #dddddd;
+}
+
+.menu-title {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999999;
+    font-weight: bold;
+}
+
+.sidebar a {
+    display: block;
+    padding: 3px 5px;
+    color: #527bbd;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.sidebar a.current {
+    color: #022b6d;
+    font-weight: bold;
+}
+
+main {
+    padding: 25px 35px 50px;
+}
+
+h1,
+h2 {
+    color: #527bbd;
+    font-weight: normal;
+}
+
+h1 {
+    margin: 0 0 25px;
+    padding-bottom: 5px;
+    border-bottom: 3px double #999999;
+    font-size: 1.8rem;
+}
+
+h2 {
+    margin-top: 32px;
+    margin-bottom: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #aaaaaa;
+    font-size: 1.3rem;
+}
+
+a {
+    color: #224b8d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.profile img {
+    width: 165px;
+    max-width: 100%;
+    height: auto;
+}
+
+.profile p:first-child {
+    margin-top: 0;
+}
+
+.publications {
+    padding-left: 25px;
+}
+
+.publications li {
+    margin-bottom: 17px;
+}
+
+.paper-title {
+    font-weight: bold;
+}
+
+.paper-links {
+    margin-top: 3px;
+    font-size: 0.95rem;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    color: #666666;
+    white-space: nowrap;
+}
+
+footer {
+    margin-top: 45px;
+    padding-top: 7px;
+    border-top: 1px solid #cccccc;
+    color: #888888;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+    .page {
+        display: block;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 0;
+        border-right: none;
+        border-left: none;
+    }
+
+    .menu-title {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .sidebar a {
+        display: inline-block;
+    }
+
+    main {
+        padding: 25px 20px 40px;
+    }
+
+    .profile {
+        grid-template-columns: 1fr;
+    }
+
+    .profile img {
+        width: 150px;
+    }
+
+    .news-item {
+        grid-template-columns: 1fr;
+        gap: 1px;
+    }
+}
