@@ -15,18 +15,17 @@ body {
 
 .page {
     display: grid;
-    grid-template-columns: 175px minmax(0, 800px);
-    max-width: 1050px;
+    grid-template-columns: 210px minmax(0, 1050px);
+    max-width: 1320px;
     min-height: 100vh;
     margin: 0 auto;
 }
 
 .sidebar {
-    align-self: start;
-    margin-top: 25px;
-    padding: 14px 12px;
+    padding: 50px 18px;
     background: #f6f6f6;
-    border: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
 }
 
 .menu-title {
@@ -53,7 +52,7 @@ body {
 }
 
 main {
-    padding: 25px 35px 50px;
+    padding: 45px 45px 60px;
 }
 
 h1,
