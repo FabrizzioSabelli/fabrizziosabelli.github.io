@@ -15,14 +15,16 @@ body {
 
 .page {
     display: grid;
-    grid-template-columns: 210px minmax(0, 1050px);
+    grid-template-columns: max-content minmax(0, 1fr);
+    width: 100%;
     min-height: 100vh;
     margin: 0;
-    width: 100%;
 }
 
 .sidebar {
-    padding: 50px 18px;
+    width: max-content;
+    min-width: 0;
+    padding: 50px 22px;
     background: #f6f6f6;
     border-right: 1px solid #dddddd;
 }
@@ -51,7 +53,9 @@ body {
 }
 
 main {
-    padding: 45px 50px 60px;
+    width: 100%;
+    max-width: none;
+    padding: 45px 45px 60px;
 }
 
 h1,
