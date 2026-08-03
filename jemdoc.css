@@ -24,7 +24,7 @@ body {
 .sidebar {
     width: max-content;
     min-width: 0;
-    padding: 50px 22px;
+    padding: 8px 14px 50px;
     background: #f6f6f6;
     border-right: 1px solid #dddddd;
 }
@@ -55,7 +55,7 @@ body {
 main {
     width: 100%;
     max-width: none;
-    padding: 45px 45px 60px;
+    padding: 8px 30px 60px;
 }
 
 h1,
@@ -90,16 +90,15 @@ a:hover {
 
 .profile {
     display: grid;
-    grid-template-columns: 330px minmax(0, 1fr);
-    gap: 50px;
-    align-items: stretch;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 35px;
+    align-items: start;
 }
 
 .profile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
+    width: 260px;
+    max-width: 100%;
+    height: auto;
 }
 
 .profile p:first-child {
