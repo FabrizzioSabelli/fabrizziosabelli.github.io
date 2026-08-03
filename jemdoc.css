@@ -16,15 +16,14 @@ body {
 .page {
     display: grid;
     grid-template-columns: 210px minmax(0, 1050px);
-    max-width: 1320px;
     min-height: 100vh;
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;
 }
 
 .sidebar {
     padding: 50px 18px;
     background: #f6f6f6;
-    border-left: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
 }
 
@@ -167,11 +166,16 @@ footer {
     }
 
     .profile {
-        grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
     }
-
+    
     .profile img {
-        width: 150px;
+        width: 240px;
+        max-width: 100%;
+        height: auto;
     }
 
     .news-item {
